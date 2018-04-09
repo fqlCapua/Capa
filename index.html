@@ -145,6 +145,17 @@
         }, function(ret, err) {
 
         });
+
+        var ajpush = api.require('ajpush');
+
+        ajpush.init(function(ret) {
+            if (ret && ret.status){
+              alert("OK");
+            }else{
+            alert(222);
+            }
+        });
+
     }
 
     // 随意切换按钮
@@ -168,4 +179,5 @@
             index: index
         });
     }
+
 </script>
